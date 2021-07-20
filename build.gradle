@@ -2,31 +2,33 @@
 
 buildscript {
     repositories {
-        jcenter()
+        //jcenter()
+        mavenCentral()
         google()
+        maven { url "https://jitpack.io" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.android.tools.build:gradle:4.2.2'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
-
+/*
 allprojects {
     repositories {
         jcenter()
         maven { url "https://jitpack.io" }
         google()
     }
-}
+}*/
 
 ext {
     compileSdkVersion = 30
     buildToolsVersion = '30.0.3'
     targetSdkVersion = compileSdkVersion
 
-    appcompatLibVersion = '1.2.0'
+    appcompatLibVersion = '1.3.0'
     cardViewLibVersion = '1.0.0'
-    materialLibVersion = '1.3.0'
+    materialLibVersion = '1.4.0'
     iconHandlerVersion = 'v2.0.0'
 }
 
